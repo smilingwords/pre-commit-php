@@ -8,7 +8,7 @@ fi
 DIFF='begin diff'
 if [[ "$var" == *"$DIFF"* ]]; then
   echo "have diff"
-  printf '%s' "$var"
+  printf '%b' "$var"
   PASS=false
 fi
 if [ "$PASS" = "false" ]; then  
